@@ -1,3 +1,15 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+getCouncillors:
+    path:   /getCouncillors
+    defaults:   {   _controller: AppBundle:Default:getCouncillors    }
+    schemes: [https]
+getCouncillorsApi:
+    path:   /getCouncillorsApi
+    defaults:   {   _controller: AppBundle:Default:getCouncillorsApi    }
+    schemes: [https]
+getRandomCouncillors:
+    path:   /getRandomCouncillors
+    defaults:   {   _controller: AppBundle:Default:getRandomCouncillors    }
+    schemes: [https]
